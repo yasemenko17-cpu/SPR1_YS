@@ -1,0 +1,42 @@
+# Вхідні дані: задача 6, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.5
+      period: year
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.95
+      period: year
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.9
+      period: week
+- function: availability
+  args:
+    spec:
+      kind: chain
+      components:
+      - name: API
+        availability: 99.95
+        replicas: 3
+      - name: Черга замовлень
+        availability: 99.9
+        replicas: 2
+      - name: Платіжний провайдер
+        availability: 99.9
+- function: availability
+  args:
+    spec:
+      kind: error_budget
+      target: 99.95
+      period: month
+      incidents:
+      - 10
+      - 15

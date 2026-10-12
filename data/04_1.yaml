@@ -1,0 +1,42 @@
+# Вхідні дані: задача 4, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: check_scenario
+  args:
+    scenario:
+      attribute: продуктивність
+      source: пацієнт
+      stimulus: відкриває розклад лікаря
+      environment: 500 одночасних користувачів
+      artifact: вебзастосунок і база даних
+      response: показує вільні слоти
+      measure: p95 не більше 800 мс
+- function: check_scenario
+  args:
+    scenario:
+      attribute: продуктивність
+      source: пацієнт
+      stimulus: відкриває розклад
+      environment: навантаження
+      artifact: вебзастосунок
+      response: швидко показує розклад
+      measure: відповідь швидко
+- function: check_scenario
+  args:
+    scenario:
+      attribute: доступність
+      source: ''
+      stimulus: сервер бази даних вимикається
+      environment: '  '
+      artifact: база даних
+      response: відновлює роботу
+      measure: 99,9 % на місяць
+- function: check_scenario
+  args:
+    scenario:
+      attribute: продуктивність
+      source: пацієнт
+      stimulus: відкриває розклад лікаря
+      environment: 500 одночасних користувачів
+      artifact: вебзастосунок і база даних
+      response: показує вільні слоти
+      measure: не більше 2 с

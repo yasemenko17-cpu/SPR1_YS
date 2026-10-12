@@ -1,0 +1,20 @@
+# Вхідні дані: задача 9, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: find_tensions
+  args:
+    drivers:
+    - id: X1
+      attribute: доступність
+      weight: 3
+    - id: X2
+      attribute: вартість
+      weight: 2
+    - id: X3
+      attribute: продуктивність
+      weight: 3
+    - id: X4
+      attribute: узгодженість
+      weight: 2
+    - id: X5
+      attribute: доступність
+      weight: 1

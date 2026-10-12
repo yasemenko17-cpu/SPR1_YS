@@ -1,0 +1,29 @@
+# Вхідні дані: задача 2, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: stakeholder_grid
+  args:
+    stakeholders:
+    - name: Студент
+      power: 2
+      interest: 5
+    - name: Викладач
+      power: 3
+      interest: 4
+    - name: Працівник складу
+      power: 3
+      interest: 5
+    - name: 'студент '
+      power: 4
+      interest: 3
+    - name: Директор
+      power: 5
+      interest: 3
+    - name: ІТ-служба коледжу
+      power: 4
+      interest: 4
+    - name: Відвідувач
+      power: 1
+      interest: 1
+    - name: викладач
+      power: 2
+      interest: 5

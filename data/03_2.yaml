@@ -1,0 +1,40 @@
+# Вхідні дані: задача 3, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: rank_attributes
+  args:
+    stakeholders:
+      Клієнт: 3
+      Ресторан: 4
+      Кур'єр: 2
+      Фінансовий директор: 5
+    concerns:
+    - stakeholder: Клієнт
+      attribute: продуктивність
+      priority: 3
+    - stakeholder: Клієнт
+      attribute: доступність
+      priority: 3
+    - stakeholder: Клієнт
+      attribute: безпека
+      priority: 2
+    - stakeholder: Ресторан
+      attribute: доступність
+      priority: 3
+    - stakeholder: Ресторан
+      attribute: зручність
+      priority: 2
+    - stakeholder: Кур'єр
+      attribute: зручність
+      priority: 3
+    - stakeholder: Кур'єр
+      attribute: продуктивність
+      priority: 2
+    - stakeholder: Фінансовий директор
+      attribute: вартість
+      priority: 3
+    - stakeholder: Фінансовий директор
+      attribute: доступність
+      priority: 1
+    - stakeholder: Фінансовий директор
+      attribute: гнучкість
+      priority: 2

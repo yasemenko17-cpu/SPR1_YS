@@ -1,0 +1,55 @@
+# Вхідні дані: задача 5, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: make_scenario
+  args:
+    spec:
+      attribute: супровідність
+      source: розробник
+      stimulus: додає тип ресурсу
+      environment: звичайна розробка
+      artifact: модуль каталогу
+      response: додає тип ресурсу без змін інших модулів
+      target:
+        value: 2
+        unit: людино-дн
+    existing_ids:
+    - Q-MAINT-09
+    - Q-PERF-11
+- function: make_scenario
+  args:
+    spec:
+      attribute: продуктивність
+      source: студент
+      stimulus: відкриває каталог
+      environment: 100 користувачів
+      artifact: вебзастосунок
+      response: показує список
+      target:
+        metric: p95
+        value: 0.25
+        unit: с
+    existing_ids: []
+- function: make_scenario
+  args:
+    spec:
+      attribute: красота
+      source: студент
+      stimulus: відкриває каталог
+      environment: норма
+      artifact: вебзастосунок
+      response: показує список
+      target:
+        value: 1
+        unit: с
+    existing_ids: []
+- function: render_markdown
+  args:
+    scenario:
+      id: Q-MAINT-10
+      attribute: супровідність
+      source: розробник
+      stimulus: додає тип ресурсу
+      environment: звичайна розробка
+      artifact: модуль каталогу
+      response: додає тип ресурсу без змін інших модулів
+      measure: ≤ 2 людино-дн

@@ -1,0 +1,26 @@
+# Вхідні дані: задача 2, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: stakeholder_grid
+  args:
+    stakeholders:
+    - name: Клієнт
+      power: 3
+      interest: 5
+    - name: Кур'єр
+      power: 2
+      interest: 5
+    - name: Ресторан-партнер
+      power: 4
+      interest: 4
+    - name: Служба підтримки
+      power: 2
+      interest: 3
+    - name: Платіжний провайдер
+      power: 5
+      interest: 1
+    - name: Маркетолог
+      power: 3
+      interest: 2
+    - name: Юрист
+      power: 4
+      interest: 2

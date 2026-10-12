@@ -1,0 +1,47 @@
+# Вхідні дані: задача 5, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: make_scenario
+  args:
+    spec:
+      attribute: продуктивність
+      source: '  клієнт  '
+      stimulus: оформлює   замовлення
+      environment: обідній пік
+      artifact: сервіс замовлень
+      response: підтверджує замовлення
+      target:
+        metric: p99
+        value: 1.5
+        unit: с
+    existing_ids:
+    - Q-PERF-01
+    - Q-PERF-02
+    - Q-PERF-03
+- function: make_scenario
+  args:
+    spec:
+      attribute: безпека
+      source: зловмисник
+      stimulus: підбирає пароль
+      environment: відкрита мережа
+      artifact: модуль входу
+      response: блокує запити з адреси
+      target:
+        value: 5
+        unit: спроб
+    existing_ids: []
+- function: make_scenario
+  args:
+    spec:
+      attribute: доступність
+      source: інженер
+      stimulus: отримує сповіщення про збій
+      environment: нічна зміна
+      artifact: сервіс замовлень
+      response: відновлює роботу
+      target:
+        metric: MTTR
+        value: 15
+        unit: хв
+    existing_ids:
+    - Q-SEC-01

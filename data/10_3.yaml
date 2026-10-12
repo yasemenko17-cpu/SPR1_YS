@@ -1,0 +1,15 @@
+# Вхідні дані: задача 10, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: check_register_text
+  args:
+    text: |
+      goals:
+        - {id: G1, priority: must}
+        - {id: G2, priority: should}
+        - {id: G3, priority: critical}
+      scenarios:
+        - {id: Q1, goal: G1, attribute: супровідність, measure: "≤ 2 людино-дн"}
+        - {id: Q2, goal: G2, attribute: продуктивність, measure: "p95 ≤ 250 мс"}
+        - {id: Q3, goal: G3, attribute: безпека, measure: "≤ 5 спроб"}
+      drivers:
+        - {id: D1, scenarios: [Q1, Q2, Q3]}

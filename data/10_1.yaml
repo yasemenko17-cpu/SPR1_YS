@@ -1,0 +1,17 @@
+# Вхідні дані: задача 10, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: check_register_text
+  args:
+    text: |
+      goals:
+        - {id: G1, priority: must}
+        - {id: G2, priority: must}
+        - {id: G3, priority: should}
+        - {id: G4, priority: could}
+      scenarios:
+        - {id: Q1, goal: G1, attribute: продуктивність, measure: "p95 ≤ 800 мс"}
+        - {id: Q2, goal: G2, attribute: доступність, measure: "≥ 99,9 %"}
+        - {id: Q3, goal: G3, attribute: безпека, measure: "≤ 5 спроб"}
+      drivers:
+        - {id: D1, scenarios: [Q1, Q2]}
+        - {id: D2, scenarios: [Q3]}

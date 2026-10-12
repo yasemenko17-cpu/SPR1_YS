@@ -1,0 +1,17 @@
+# Вхідні дані: задача 9, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: find_tensions
+  args:
+    drivers:
+    - id: D
+      attribute: продуктивність
+      weight: 2
+    - id: C
+      attribute: гнучкість
+      weight: 2
+    - id: B
+      attribute: зручність
+      weight: 2
+    - id: A
+      attribute: безпека
+      weight: 2

@@ -1,0 +1,43 @@
+# Вхідні дані: задача 5, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: make_scenario
+  args:
+    spec:
+      attribute: продуктивність
+      source: пацієнт
+      stimulus: відкриває розклад лікаря
+      environment: 500 одночасних користувачів
+      artifact: вебзастосунок і база даних
+      response: показує вільні слоти
+      target:
+        metric: p95
+        value: 0.8
+        unit: с
+        bound: max
+    existing_ids: []
+- function: make_scenario
+  args:
+    spec:
+      attribute: доступність
+      source: лікар
+      stimulus: відкриває свій розклад
+      environment: робочий день
+      artifact: вебзастосунок
+      response: показує розклад
+      target:
+        value: 99.9
+        unit: '%'
+        bound: min
+    existing_ids:
+    - Q-AVAIL-01
+- function: render_markdown
+  args:
+    scenario:
+      id: Q-PERF-01
+      attribute: продуктивність
+      source: пацієнт
+      stimulus: відкриває розклад лікаря
+      environment: 500 одночасних користувачів
+      artifact: вебзастосунок і база даних
+      response: показує вільні слоти
+      measure: p95 ≤ 800 мс

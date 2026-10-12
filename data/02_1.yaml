@@ -1,0 +1,23 @@
+# Вхідні дані: задача 2, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: stakeholder_grid
+  args:
+    stakeholders:
+    - name: Пацієнт
+      power: 4
+      interest: 5
+    - name: Лікар
+      power: 3
+      interest: 5
+    - name: Адміністратор клініки
+      power: 4
+      interest: 4
+    - name: Власник клініки
+      power: 5
+      interest: 3
+    - name: Постачальник SMS
+      power: 2
+      interest: 2
+    - name: Інспектор з захисту даних
+      power: 5
+      interest: 2

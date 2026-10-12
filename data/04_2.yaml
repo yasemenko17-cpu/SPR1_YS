@@ -1,0 +1,42 @@
+# Вхідні дані: задача 4, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: check_scenario
+  args:
+    scenario:
+      attribute: доступність
+      source: клієнт
+      stimulus: оформлює замовлення
+      environment: обідній пік
+      artifact: сервіс замовлень
+      response: приймає замовлення
+      measure: не менше 99,95 % запитів
+- function: check_scenario
+  args:
+    scenario:
+      attribute: доступність
+      source: клієнт
+      stimulus: оформлює замовлення
+      environment: обідній пік
+      artifact: сервіс замовлень
+      response: приймає замовлення
+      measure: 101 % часу
+- function: check_scenario
+  args:
+    scenario:
+      attribute: безпека
+      source: зловмисник
+      stimulus: підбирає пароль
+      environment: мережа
+      artifact: модуль входу
+      response: надійно і безпечно зберігає платіжні дані
+      measure: не більше 3 спроб
+- function: check_scenario
+  args:
+    scenario:
+      attribute: красота
+      source: клієнт
+      stimulus: відкриває сторінку
+      environment: норма
+      artifact: вебзастосунок
+      response: показує сторінку
+      measure: 10 мс

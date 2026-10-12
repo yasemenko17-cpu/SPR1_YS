@@ -1,0 +1,40 @@
+# Вхідні дані: задача 3, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: rank_attributes
+  args:
+    stakeholders:
+      Студент: 2
+      Викладач: 3
+      Директор: 5
+      ІТ-служба: 4
+    concerns:
+    - stakeholder: Студент
+      attribute: продуктивність
+      priority: 3
+    - stakeholder: Студент
+      attribute: зручність
+      priority: 3
+    - stakeholder: Студент
+      attribute: безпека
+      priority: 2
+    - stakeholder: Викладач
+      attribute: зручність
+      priority: 2
+    - stakeholder: Викладач
+      attribute: супровідність
+      priority: 1
+    - stakeholder: Директор
+      attribute: вартість
+      priority: 3
+    - stakeholder: Директор
+      attribute: безпека
+      priority: 2
+    - stakeholder: ІТ-служба
+      attribute: супровідність
+      priority: 3
+    - stakeholder: ІТ-служба
+      attribute: безпека
+      priority: 3
+    - stakeholder: ІТ-служба
+      attribute: доступність
+      priority: 2

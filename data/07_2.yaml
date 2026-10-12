@@ -1,0 +1,18 @@
+# Вхідні дані: задача 7, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: size_capacity
+  args:
+    spec:
+      users: 18000
+      actions_per_user_hour: 6
+      peak_factor: 4
+      target_utilization: 0.7
+      instance_rps: 50
+      n_plus_one: true
+      latency_budget:
+        total_ms: 1200
+        components:
+          шлюз: 1
+          застосунок: 4
+          база даних: 6
+          платіжний провайдер: 3

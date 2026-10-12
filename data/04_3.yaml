@@ -1,0 +1,42 @@
+# Вхідні дані: задача 4, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: check_scenario
+  args:
+    scenario:
+      attribute: супровідність
+      source: розробник
+      stimulus: додає тип ресурсу
+      environment: звичайна розробка
+      artifact: модуль каталогу
+      response: додає тип ресурсу без змін інших модулів
+      measure: не більше 2 людино-днів
+- function: check_scenario
+  args:
+    scenario:
+      attribute: продуктивність
+      source: студент
+      stimulus: відкриває каталог
+      environment: 100 користувачів
+      artifact: вебзастосунок
+      response: показує список
+      measure: p99 ≤ 1,5 с
+- function: check_scenario
+  args:
+    scenario:
+      attribute: зручність
+      source: ''
+      stimulus: ''
+      environment: ''
+      artifact: ''
+      response: ''
+      measure: ''
+- function: check_scenario
+  args:
+    scenario:
+      attribute: продуктивність
+      source: студент
+      stimulus: відкриває каталог
+      environment: 100 користувачів
+      artifact: вебзастосунок
+      response: достатньо швидко відповідає
+      measure: не більше 3 секунд

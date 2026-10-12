@@ -1,0 +1,20 @@
+# Вхідні дані: задача 9, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: find_tensions
+  args:
+    drivers:
+    - id: D1
+      attribute: продуктивність
+      weight: 3
+    - id: D2
+      attribute: безпека
+      weight: 3
+    - id: D3
+      attribute: доступність
+      weight: 2
+    - id: D4
+      attribute: зручність
+      weight: 2
+    - id: D5
+      attribute: супровідність
+      weight: 1

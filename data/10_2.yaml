@@ -1,0 +1,19 @@
+# Вхідні дані: задача 10, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: check_register_text
+  args:
+    text: |
+      goals:
+        - {id: G1, priority: must}
+        - {id: G2, priority: must}
+        - {id: G3, priority: should}
+        - {id: G2, priority: must}
+      scenarios:
+        - {id: Q1, goal: G1, attribute: продуктивність, measure: "p95 ≤ 1500 мс"}
+        - {id: Q2, goal: G9, attribute: доступність, measure: "≥ 99,95 %"}
+        - {id: Q3, goal: null, attribute: безпека, measure: "≤ 3 спроб"}
+        - {id: Q4, goal: G3, attribute: вартість, measure: "≤ 400 грн"}
+      drivers:
+        - {id: D1, scenarios: [Q1, Q7]}
+        - {id: D2, scenarios: []}
+        - {id: D3, scenarios: [Q4]}

@@ -1,0 +1,47 @@
+# Вхідні дані: задача 8, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: build_utility_tree
+  args:
+    scenarios:
+    - id: P1
+      attribute: продуктивність
+      refinement: затримка
+      text: сценарій P1
+      importance: H
+      difficulty: M
+    - id: A1
+      attribute: доступність
+      refinement: відмова залежності
+      text: сценарій A1
+      importance: H
+      difficulty: H
+    - id: A2
+      attribute: доступність
+      refinement: відновлення
+      text: сценарій A2
+      importance: M
+      difficulty: M
+    - id: S1
+      attribute: безпека
+      refinement: доступ до карток пацієнтів
+      text: сценарій S1
+      importance: H
+      difficulty: M
+    - id: S2
+      attribute: безпека
+      refinement: журнал
+      text: сценарій S2
+      importance: L
+      difficulty: L
+    - id: M1
+      attribute: супровідність
+      refinement: нова послуга
+      text: сценарій M1
+      importance: M
+      difficulty: H
+    - id: U1
+      attribute: зручність
+      refinement: запис з телефону
+      text: сценарій U1
+      importance: L
+      difficulty: H

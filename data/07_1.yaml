@@ -1,0 +1,11 @@
+# Вхідні дані: задача 7, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: size_capacity
+  args:
+    spec:
+      users: 7200
+      actions_per_user_hour: 10
+      peak_factor: 3
+      target_utilization: 0.6
+      instance_rps: 40
+      n_plus_one: true

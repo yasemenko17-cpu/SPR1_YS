@@ -1,0 +1,48 @@
+# Вхідні дані: задача 8, набір 2 (Доставка їжі). Очікуваних результатів тут немає.
+calls:
+- function: build_utility_tree
+  args:
+    max_drivers: 2
+    scenarios:
+    - id: D1
+      attribute: продуктивність
+      refinement: затримка
+      text: сценарій D1
+      importance: H
+      difficulty: M
+    - id: D2
+      attribute: продуктивність
+      refinement: пропускна здатність
+      text: сценарій D2
+      importance: H
+      difficulty: H
+    - id: D3
+      attribute: доступність
+      refinement: відмова провайдера
+      text: сценарій D3
+      importance: H
+      difficulty: H
+    - id: D4
+      attribute: безпека
+      refinement: платежі
+      text: сценарій D4
+      importance: H
+      difficulty: M
+    - id: D5
+      attribute: вартість
+      refinement: хмарні витрати
+      text: сценарій D5
+      importance: M
+      difficulty: M
+    - id: D6
+      attribute: продуктивність
+      refinement: затримка
+      text: сценарій D6
+      importance: M
+      difficulty: L
+    - id: D7
+      attribute: супровідність
+      refinement: тести
+      text: сценарій D7
+      importance: L
+      difficulty: H

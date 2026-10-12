@@ -1,0 +1,37 @@
+# Вхідні дані: задача 3, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: rank_attributes
+  args:
+    stakeholders:
+      Пацієнт: 4
+      Лікар: 3
+      Власник: 5
+      Інспектор: 5
+    concerns:
+    - stakeholder: Пацієнт
+      attribute: доступність
+      priority: 3
+    - stakeholder: Пацієнт
+      attribute: продуктивність
+      priority: 2
+    - stakeholder: Пацієнт
+      attribute: зручність
+      priority: 3
+    - stakeholder: Лікар
+      attribute: зручність
+      priority: 3
+    - stakeholder: Лікар
+      attribute: продуктивність
+      priority: 1
+    - stakeholder: Власник
+      attribute: вартість
+      priority: 3
+    - stakeholder: Власник
+      attribute: доступність
+      priority: 2
+    - stakeholder: Інспектор
+      attribute: безпека
+      priority: 3
+    - stakeholder: Інспектор
+      attribute: супровідність
+      priority: 1

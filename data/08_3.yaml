@@ -1,0 +1,47 @@
+# Вхідні дані: задача 8, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: build_utility_tree
+  args:
+    scenarios:
+    - id: C1
+      attribute: гнучкість
+      refinement: перенесення
+      text: сценарій C1
+      importance: M
+      difficulty: M
+    - id: C2
+      attribute: супровідність
+      refinement: зміна
+      text: сценарій C2
+      importance: H
+      difficulty: L
+    - id: C3
+      attribute: зручність
+      refinement: навчання
+      text: сценарій C3
+      importance: M
+      difficulty: M
+    - id: C4
+      attribute: продуктивність
+      refinement: затримка
+      text: сценарій C4
+      importance: H
+      difficulty: M
+    - id: C5
+      attribute: доступність
+      refinement: відмова
+      text: сценарій C5
+      importance: H
+      difficulty: H
+    - id: C6
+      attribute: безпека
+      refinement: доступ
+      text: сценарій C6
+      importance: L
+      difficulty: L
+    - id: C7
+      attribute: вартість
+      refinement: ліцензії
+      text: сценарій C7
+      importance: L
+      difficulty: H

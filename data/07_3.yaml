@@ -1,0 +1,17 @@
+# Вхідні дані: задача 7, набір 3 (Каталог ресурсів коледжу). Очікуваних результатів тут немає.
+calls:
+- function: size_capacity
+  args:
+    spec:
+      users: 900
+      actions_per_user_hour: 12
+      peak_factor: 7
+      target_utilization: 0.7
+      instance_rps: 10
+      n_plus_one: false
+      latency_budget:
+        total_ms: 800
+        components:
+          веб: 1
+          застосунок: 3
+          база даних: 4

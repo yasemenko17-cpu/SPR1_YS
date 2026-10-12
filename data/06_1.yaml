@@ -1,0 +1,42 @@
+# Вхідні дані: задача 6, набір 1 (Запис до лікаря). Очікуваних результатів тут немає.
+calls:
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.9
+      period: month
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.95
+      period: month
+- function: availability
+  args:
+    spec:
+      kind: budget
+      target: 99.99
+      period: year
+- function: availability
+  args:
+    spec:
+      kind: chain
+      components:
+      - name: Вебзастосунок
+        availability: 99.9
+        replicas: 2
+      - name: База даних
+        availability: 99.95
+      - name: SMS-шлюз
+        availability: 99.5
+- function: availability
+  args:
+    spec:
+      kind: error_budget
+      target: 99.9
+      period: month
+      incidents:
+      - 12
+      - 7.5
+      - 20
